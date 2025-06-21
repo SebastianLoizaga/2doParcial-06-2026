@@ -6,4 +6,8 @@ public class Provincia extends Region{
     public Provincia(String nombre){
         super(nombre);
     }
+
+    /* public CriterioVisualizador getCV(){
+        
+    } */
 }

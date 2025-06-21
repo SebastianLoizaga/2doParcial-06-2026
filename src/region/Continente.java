@@ -6,4 +6,8 @@ public class Continente extends Region{
     public Continente(String nombre){
         super(nombre);
     }
+
+    /* public CriterioVisualizador getCV(){
+        
+    } */
 }

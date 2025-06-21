@@ -10,4 +10,8 @@ public class Region {
     public String getNombre(){
         return this.nombre;
     }
+
+    /* public CriterioVisualizador getCV(){
+
+    } */
 }

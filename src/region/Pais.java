@@ -6,4 +6,8 @@ public class Pais extends Region{
     public Pais(String nombre){
         super(nombre);
     }
+
+    /* public CriterioVisualizador getCV(){
+        
+    } */
 }

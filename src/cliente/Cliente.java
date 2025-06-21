@@ -1,8 +1,8 @@
 package cliente;
 
+import compra.Compra;
 import java.util.ArrayList;
 import java.util.List;
-import compra.Compra;
 import region.Region;
 
 public class Cliente {
@@ -15,8 +15,11 @@ public class Cliente {
         this.nombre = nombre;
         this.region = region;
         this.direccion = direccion;
-        List<Compra> aux = new ArrayList<Compra>();
-        this.compras = aux;
+        compras = new ArrayList<Compra>();
+    }
+
+    public void addCompra(Compra compra){
+        compras.add(compra);
     }
 
     public String getNombre(){
@@ -27,11 +30,11 @@ public class Cliente {
         return this.region;
     }
 
-    public List<Compra> getCompras(){
+    /* public List<Compra> getCompra(){
 
-    }
+    } */
 
-    public void imprimirCatalogo(){
-        
-    }
+    /* public void imprimirCatalogo(){
+
+    } */
 }
