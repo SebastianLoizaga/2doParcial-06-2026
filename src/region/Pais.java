@@ -9,7 +9,7 @@ public class Pais extends Region implements CriterioVisualizador{
         super(nombre);
     }
 
-    /* public CriterioVisualizador getCV(){
-        
-    } */
+    public CriterioVisualizador getCV(){
+        return new CriterioSimple();
+    }
 }

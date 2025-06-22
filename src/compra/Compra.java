@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 import articulo.Articulo;
+import interfaces.CriterioVisualizador;
+import interfaces.Pantalla;
+import javax.swing.border.SoftBevelBorder;
 
 public class Compra {
     private List<Articulo> articulosComprados;
@@ -20,7 +23,11 @@ public class Compra {
         return articulosComprados;
     }
 
-    /* public void imprimirCompra(){
-
-    } */
+    public void imprimirCompra(Pantalla pantalla, CriterioVisualizador cv){
+        StringBuilder sb = new StringBuilder();
+        for (Articulo articulo : articulosComprados){
+            sb.append(cv.articuloToString(articulo)).append("\n");
+        }
+        pantalla.mostrar(sb.toString());
+    }
 }

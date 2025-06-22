@@ -1,8 +1,11 @@
 package cliente;
 
 import compra.Compra;
+import interfaces.Pantalla;
 import java.util.ArrayList;
 import java.util.List;
+
+import articulo.Articulo;
 import region.Region;
 
 public class Cliente {
@@ -30,9 +33,15 @@ public class Cliente {
         return this.region;
     }
 
-    /* public void imprimirCatalogo(){
-
-    } */
+    public void imprimirCatalogo(Pantalla pantalla){
+        StringBuilder sb = new StringBuilder();
+        for (Compra compra : compras){
+            for (Articulo articulo : compra.getArticulo()){
+                sb.append(region.getCV().articuloToString(articulo)).append("\n");
+            }
+        }
+        pantalla.mostrar(sb.toString());
+    }
 
     public List<Compra> getCompra(){
         return compras;

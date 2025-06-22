@@ -24,6 +24,10 @@ public class Componente {
         return composicion;
     }
 
+    public boolean esBasico(){
+        return composicion.isEmpty();
+    }
+
     /* public String toString(){
 
     } */

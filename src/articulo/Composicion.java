@@ -1,11 +1,11 @@
 package articulo;
 
 public class Composicion {
-    private Componente componente;
+    private Componente subComponente;
     private int cantUnidades;
 
-    public Composicion(Componente componente, int cantUnidades){
-        this.componente = componente;
+    public Composicion(Componente subComponente, int cantUnidades){
+        this.subComponente = subComponente;
         this.cantUnidades = cantUnidades;
     }
 
@@ -14,7 +14,7 @@ public class Composicion {
     }
 
     public Componente getComponente(){
-        return this.componente;
+        return this.subComponente;
     }
 
     /* public CompStr getCompStr(){
