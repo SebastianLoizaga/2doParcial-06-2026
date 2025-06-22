@@ -34,7 +34,7 @@ public class Cliente {
 
     } */
 
-    /* public List<Compra> getCompra(){
-
-    } */
+    public List<Compra> getCompra(){
+        return compras;
+    }
 }

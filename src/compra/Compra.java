@@ -16,9 +16,9 @@ public class Compra {
         articulosComprados.add(articulo);
     }
 
-    /* public Articulo geArticulo(){
-
-    } */
+    public List<Articulo> getArticulo(){
+        return articulosComprados;
+    }
 
     /* public void imprimirCompra(){
 

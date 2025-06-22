@@ -25,11 +25,11 @@ public class Empresa {
         clientes.add(cliente);
     }
 
-    /* public List<Cliente> getCliente(){
-
+    public List<Cliente> getCliente(){
+        return clientes;
     }
 
     public List<Articulo> getArticulo(){
-        
-    } */
+        return articulos;
+    }
 }

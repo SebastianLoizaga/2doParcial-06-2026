@@ -20,9 +20,9 @@ public class Componente {
         return this.nombre;
     }
 
-    /* public List<Composicion> getComposicion(){
-
-    } */
+    public List<Composicion> getComposicion(){
+        return composicion;
+    }
 
     /* public String toString(){
 

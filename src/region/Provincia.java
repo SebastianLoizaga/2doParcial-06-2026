@@ -1,6 +1,8 @@
 package region;
 
-public class Provincia extends Region{
+import interfaces.CriterioVisualizador;
+
+public class Provincia extends Region implements CriterioVisualizador{
     private String nombre;
     
     public Provincia(String nombre){

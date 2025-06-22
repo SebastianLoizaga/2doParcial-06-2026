@@ -6,15 +6,19 @@ import articulo.Composicion;
 import cliente.Cliente;
 import compra.Compra;
 import empresa.Empresa;
+import region.Continente;
+import region.Pais;
 import region.Provincia;
 
 public class Principal {
     public static void main(String[] args) {
         Empresa empresa = new Empresa("FGingredientes");
         Cliente cliente1 = new Cliente("Dantien", new Provincia("Garin"), "Roma 555");
-        Cliente cliente2 = new Cliente("Gutierrez", new Provincia("Capital"), "Juramento 2900");
+        Cliente cliente3 = new Cliente("Coca", new Pais("Estados Unidos"), "direccion");
+        Cliente cliente4 = new Cliente("Luciannos", new Continente("Europa"), "Juramento 2900");
         empresa.addCliente(cliente1);
-        empresa.addCliente(cliente2);
+        empresa.addCliente(cliente3);
+        empresa.addCliente(cliente4);
         Componente gomaGuar = new Componente("Goma Guar");
         Componente gomaXantica = new Componente("Goma Xantica");
         Componente bicDeSodio = new Componente("Bicarbonato de Sodio");
@@ -38,9 +42,14 @@ public class Principal {
         compraCliente1.addArticulo(articulo5);
         compraCliente1.addArticulo(articulo2);
         cliente1.addCompra(compraCliente1);
-        Compra compraCliente2 = new Compra();
-        compraCliente1.addArticulo(articulo3);
-        compraCliente1.addArticulo(articulo1);
-        cliente2.addCompra(compraCliente2);
+        Compra compraCliente3 = new Compra();
+        compraCliente3.addArticulo(articulo3);
+        compraCliente3.addArticulo(articulo2);
+        cliente3.addCompra(compraCliente3);
+        Compra compraCliente4 = new Compra();
+        compraCliente4.addArticulo(articulo4);
+        compraCliente4.addArticulo(articulo2);
+        compraCliente4.addArticulo(articulo1);
+        cliente4.addCompra(compraCliente4);
     }
 }
