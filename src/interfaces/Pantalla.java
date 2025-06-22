@@ -1,5 +1,5 @@
-package interfases;
+package interfaces;
 
 public interface Pantalla {
-
+    
 }
