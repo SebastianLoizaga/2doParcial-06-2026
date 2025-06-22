@@ -30,11 +30,11 @@ public class Cliente {
         return this.region;
     }
 
-    /* public List<Compra> getCompra(){
+    /* public void imprimirCatalogo(){
 
     } */
 
-    /* public void imprimirCatalogo(){
+    /* public List<Compra> getCompra(){
 
     } */
 }
